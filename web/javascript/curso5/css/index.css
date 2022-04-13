@@ -132,3 +132,25 @@ button[disabled=disabled], button:disabled {
 .campo-invalido{
 	border: 1px solid red;
 }
+
+.paciente-incorrecto{
+	background-color: lightcoral;
+}
+#mensaje-errores{
+	color: lightcoral;
+}
+
+.fadeOut{
+	opacity: 0;
+	transition: 0.5s;
+}
+
+#filtrar-tabla{
+	width: 200px;
+	height: 50;
+	margin-bottom: 10px;
+}
+
+.invisible{
+	display:none;
+}

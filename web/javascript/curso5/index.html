@@ -8,16 +8,20 @@
 		<link rel="stylesheet" type="text/css" href="css/index.css">
 
 	</head>
-	<body>
 
+	<body>
 		<header>
 			<div class="container">
-				<h1>Buona Vita Nutrición</h1>
+				<h1 class="titulo">Buona Vita Nutrición</h1>
 			</div>
-		</header>
+		</header>	
+		
 		<main>
 			<section class="container">
 				<h2>Mis pacientes</h2>
+				<label for="filtrar-tabla"></label>
+				<input type="text" name="filtro" id="filtrar-tabla" placeholder="Digite el nombre del paciente">
+								
 				<table>
 					<thead>
 						<tr>
@@ -31,16 +35,16 @@
 					<tbody id="tabla-pacientes">
 						<tr class="paciente">
 							<td class="info-nombre">Pablo</td>
-							<td class="info-peso">100</td>
-							<td class="info-altura">2.00</td>
+							<td class="info-peso">80</td>
+							<td class="info-altura">1.78</td>
 							<td class="info-gordura">10</td>
 							<td class="info-imc">0</td>
 						</tr>
 
 						<tr class="paciente" >
 							<td class="info-nombre">Juan</td>
-							<td class="info-peso">80</td>
-							<td class="info-altura">1.72</td>
+							<td class="info-peso">73</td>
+							<td class="info-altura">1.65</td>
 							<td class="info-gordura">40</td>
 							<td class="info-imc">0</td>
 						</tr>
@@ -48,7 +52,7 @@
 						<tr class="paciente" >
 							<td class="info-nombre">Erica</td>
 							<td class="info-peso">54</td>
-							<td class="info-altura">1.64</td>
+							<td class="info-altura">1.70</td>
 							<td class="info-gordura">14</td>
 							<td class="info-imc">0</td>
 						</tr>
@@ -67,11 +71,59 @@
 							<td class="info-gordura">19</td>
 							<td class="info-imc">0</td>
 						</tr>
+						<tr class="paciente" >
+							<td class="info-nombre">Pedro</td>
+							<td class="info-peso">70</td>
+							<td class="info-altura">1.68</td>
+							<td class="info-gordura">23</td>
+							<td class="info-imc">0</td>
+						</tr>
+						<tr class="paciente" >
+							<td class="info-nombre">Maria</td>
+							<td class="info-peso">55</td>
+							<td class="info-altura">1.60</td>
+							<td class="info-gordura">17</td>
+							<td class="info-imc">0</td>
+						</tr>						
 					</tbody>
 				</table>
-
+				<ul id="mensaje-errores-pacientes"></ul>
+				<button id="buscar-paciente" class="boton bto-principal">
+					Buscar Pacientes
+				</button>
 			</section>
 		</main>
 
+		<section class="container">
+			<h2 id="titulo-form">Adicionar nuevo paciente</h2>
+			<ul id="mensaje-errores"></ul>
+			<form id="form-adicionar">
+				<div class="grupo">
+					<label for="nombre">Nombre:</label>
+					<input id="nombre" name="nombre" type="text" placeholder="digite el nombre del paciente" class="campo">
+				</div>
+				<div class="grupo">
+					<label for="peso">Peso:</label>
+					<input id="peso" name="peso" type="text" placeholder="digite el peso del paciente" class="campo campo-medio">
+				</div>
+				<div class="grupo">
+					<label for="altura">Altura:</label>
+					<input id="altura" name="altura" type="text" placeholder="digite la altura del paciente" class="campo campo-medio">
+				</div>
+				<div class="grupo">
+					<label for="gordura">% de Gordura:</label>
+					<input id="gordura" type="text" placeholder="digite el porcentaje de gordura del paciente" class="campo campo-medio">
+				</div>
+				<button id="adicionar-paciente" class="boton bto-principal">Adicionar</button>
+			</form>
+		</section>
+
+	
+		<script src="js/calcular-imc.js"></script>	
+		<script src="js/form.js"></script>	
+		<script src="js/eliminar-paciente.js"></script>
+		<script src="js/filtrar.js"></script>
+		<script src="js/buscar-pacientes.js"></script>
 	</body>
+
 </html>
