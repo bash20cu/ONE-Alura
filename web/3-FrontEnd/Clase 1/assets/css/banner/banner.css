@@ -22,7 +22,7 @@
 
 @media screen and (min-width: 0) {
   .banner-imagen {
-    height: calc(90vh - 53px);
+    height: calc(100vh -53px);
   }
   .banner-titulo {
     font-size: 3rem;
