@@ -14,22 +14,24 @@
         <link href="./assets/css/sobre/sobre.css" rel="stylesheet" />
         <link href="./assets/css/recetas/recetas.css" rel="stylesheet" />
         <link href="./assets/css/quienesSomos/quienessomos.css" rel="stylesheet" />
+        <link href="./assets/css/personas/personas.css" rel="stylesheet" />
+        <link href="./assets/css/footer/footer.css" rel="stylesheet" />
     </head>
     <body>
     <header class="cabecera">
         <img class="logo" src="./assets/img/logo.jpg" alt=" Logo">
         <nav class="menu">
             <ul class="menu-lista">
-                <li class="menu-item"><a class="menu-link activo" href="#">Inicio</a></li>
-                <li class="menu-item"><a class="menu-link" href="#">Recetas</a></li>
-                <li class="menu-item"><a class="menu-link" href="#">Quienes Somos</a></li>
-                <li class="menu-item"><a class="menu-link" href="#">Contacto</a></li>
+                <li class="menu-item"><a class="menu-link activo" href="#menu">Inicio</a></li>
+                <li class="menu-item"><a class="menu-link" href="#recetas">Recetas</a></li>
+                <li class="menu-item"><a class="menu-link" href="#quienessomos">Quienes Somos</a></li>
+                <li class="menu-item"><a class="menu-link" href="#contacto">Contacto</a></li>
             </ul>
             <link rel="stylesheet" href="">
         </nav>
     </header>
-    <section class="banner">
-        <img class="banner-imagen" src="./assets/img/banner.jpg" alt="banner">
+    <section class="banner" id="menu">
+        <div class="banner-imagen" alt="banner"> </div>
         <h2 class="banner-titulo">Reproveche mejor los alimentos</h2>
     </section>
     <section class="sobre">
@@ -37,7 +39,7 @@
         <p class="sobre-descripcion">Nuestras recetas te ayudan aprovechar mejor los alimentos, economizar, ganar tiempo y practicidad</p>
     </section>
     
-    <section class="recetas">
+    <section class="recetas" id="recetas">
         <div class="receta">
             <img alt="Tigela de abacate" class="receta-imagen" src="./assets/img/recetas/bowl-de-aguacate.jpg" />
             <div class="receta-contenido">
@@ -88,7 +90,7 @@
         </div>
     </section>
 
-    <section class="quienes-somos">
+    <section class="quienes-somos" id="quienessomos">
         <h3 class="quienes-somos__titulo">Quien somos</h3>
         <p class="quienes-somos__descripcion">Conozca la comunidad por detrás de la iniciativa</p>
         <div class="personas">
@@ -109,6 +111,8 @@
             </div>
         </div>
     </section>
-
     </body>
+    <footer class="footer" id="contacto">
+        <p>Contacto: ejemplo@email.com</p>
+    </footer>
 </html>
