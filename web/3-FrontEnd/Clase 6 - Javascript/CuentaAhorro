@@ -1,0 +1,13 @@
+export class CuentaAhorro
+{
+  #cliente;
+  #saldo;
+
+  constructor(cliente, numero, agencia, saldo)
+  {
+    this.numero;
+    this.agencia;
+    this.#cliente;
+    this.#saldo;
+  }
+}
