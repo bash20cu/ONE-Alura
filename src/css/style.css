@@ -55,6 +55,17 @@ body {
 	text-align: left;
 }
 
+.textParrafo {
+	text-decoration: none;
+	color: #073042;
+	border-left: 3px solid #5EC6F3;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-left: .3em;
+	padding-top: .2em;
+	padding-bottom: .2em;
+}
+
 .contenidoPrincipal-cursos-link {
 	height: 100px;
 	background-color: #FFF;
