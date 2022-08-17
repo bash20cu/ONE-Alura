@@ -8,7 +8,7 @@ public class TestFuncionario {
 		diego.setDocumento("444556665");
 		diego.setSalario(2000);
 		diego.setTipo(0);
-		
+
 		System.out.println(diego.getSalario());
 		System.out.println(diego.getBonificacion());
 	}

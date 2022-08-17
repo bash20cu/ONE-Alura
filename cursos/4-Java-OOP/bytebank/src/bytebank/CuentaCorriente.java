@@ -2,10 +2,10 @@ package bytebank;
 
 public class CuentaCorriente extends Cuenta {
 
-	public CuentaCorriente( int agencia, int numero) {
+	public CuentaCorriente(int agencia, int numero) {
 		super(agencia, numero);
 	}
-	
+
 	@Override
 	public boolean saca(double valor) {
 		double comision = 0.2;
@@ -15,7 +15,7 @@ public class CuentaCorriente extends Cuenta {
 	@Override
 	public void deposita(double valor) {
 		// TODO Auto-generated method stub
-		
+
 	}
-	
+
 }
